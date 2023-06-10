@@ -4,7 +4,7 @@ RUN apt update && apt upgrade -y
 RUN apt install git ffmpeg python3-pip -y
 RUN pip3 install -U pip
 RUN pip install youtube-dl
-RUN sudo pip install -U youtube-dl
+RUN pip install -U youtube-dl
 RUN mkdir /app/
 WORKDIR /app/
 COPY . /app/
